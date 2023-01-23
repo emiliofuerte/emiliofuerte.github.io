@@ -32,13 +32,19 @@
         text-align: right; /* right-align the elements within the table */
         padding-right: 20px; /* Add more space between the columns */
       }
+      tr:nth-child(3) td:first-child {
+        color: rgb(122, 155, 118);
+      }
       tr:nth-child(5) td:first-child {
         color: rgb(69, 119, 176);
       }
       tr:nth-child(6) td:first-child {
         color: rgb(176, 65, 62);
       }
-      tr:not(:nth-child(5)):not(:nth-child(6)) td:first-child {
+      tr:nth-child(10) td:first-child {
+        color: rgb(176, 65, 62);
+      }
+      tr:not(:nth-child(3)):not(:nth-child(5)):not(:nth-child(6)):not(:nth-child(10)) td:first-child {
         color: silver;
       }
     </style>
@@ -52,7 +58,7 @@
      <tr>
        <td>Berkeley</td>
      </tr>
-   
+
      <tr>
        <td>Chicago</td>
      </tr>
@@ -93,11 +99,14 @@
   </br>
   </br>
 
-   <p><i><span style="color:silver">waiting</span> 
+   <p><span style="color:silver">waiting</span> 
     <span style="color:rgb(176, 65, 62)">rejected</span>
     <span style="color:rgb(69, 119, 176)">interview</span> 
     <span style="color:rgb(122, 155, 118)">accepted</span>
     <span style="color:silver"></span>
-  </i></p>
+  </p>
+
+  <p style="color:silver"><i>updated 1/23/23</i></p> 
+
 </body>
 </html>
